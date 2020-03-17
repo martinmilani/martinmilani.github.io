@@ -105,19 +105,6 @@ strong {
 }
 
 /* Scroll down button */
-[data-scroll]{
-    transition: all 2s;
-}
-
-[data-scroll="in"]{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-[data-scroll="out"]{
-    opacity: 0;
-    transform: translateX(-200px);
-}
 
 .scroll-down {
     opacity: 1;
@@ -242,7 +229,7 @@ label.logo {
 
 .nav__list{
     display: flex;
-    justify-content:space-around; 
+    justify-content:space-evenly; 
     width: 30%;
     margin: 0;
     padding: 0;
