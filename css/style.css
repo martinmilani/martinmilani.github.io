@@ -69,7 +69,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 4em 4em;
+    padding: 4em 2.5em;
     scroll-snap-align: start;
     position: relative;
 }
@@ -78,6 +78,8 @@ section {
 img {
     display: block;
     max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 strong { 
@@ -382,16 +384,29 @@ label.logo {
     align-content: center;
 }
 
-.btn-cv,
+h4{
+  margin-top: 4em;
+  margin-bottom: 0;
+}
+
 .btn-work {
     margin: 2em;
 }
+
+.btn-cv{
+  margin: 15em auto 0 auto;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
 
 .icons-list{
     list-style: none;
     display: flex;
     justify-content: center;
-    font-size: 3em;
     color: var(--clr-dark);
     margin: 0;
     padding: 0;
@@ -415,14 +430,17 @@ label.logo {
         margin: 1em;
     }
 
-    .buttons{
-        display: flex;
+    .icons-list {
+      font-size: 3em;
+    }
+
+    p{
+      padding: 1em 6em;
     }
 
 }
 
 /* My Work */
-
 
 .my-work { 
     color: var(--clr-dark);
@@ -446,31 +464,54 @@ label.logo {
 
 @media (min-width: 800px){
     .portfolio{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-     
-    }
-    
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));     
+    } 
 }
 
-.portfolio__item {
-    background: var(--clr-p-dark);
-    overflow: hidden;
+.card{
+  background-color: var(--clr-light);
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--bs);
 }
 
-.portfolio__img {
-    transition: transform 750ms cubic-bezier( 0.5, 0, 0.5, 1),
-    opacity 250ms linear;
+.card-content{
+  padding: 1em;
 }
 
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
+.card-title{
+  font-size: var(--fs-h3);
+  font-weight: var(--fw--reg);
+  margin-top: 0.25em;
 }
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .75;
+
+.card-text,
+.card-subtitle{
+  color: #546e7a;
+  font-size: 0.80rem;
+  margin-bottom: 2em;
 }
+
+.card-text{
+  font-size: 0.95rem;
+  line-height: 1.25em;
+  height: 80px;
+  overflow: auto;
+}
+
+.card-actions{
+  margin-top: 1.5em ;
+}
+
+.card-actions-link{
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 0.95rem;
+ margin-right: 1.5em;
+ color: var(--clr-primary);
+ letter-spacing: 2px;
+}
+
 
 /* footer */
 

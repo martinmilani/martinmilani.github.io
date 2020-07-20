@@ -2,144 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Milani Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martin Milani</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-    <div class="site">
-        <header>
-            <nav class="nav">
-                <label class="logo">&#60;Martin/Milani&#62; </label>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+  <div class="site">
+    <header>
+      <nav class="nav">
+        <label class="logo">&#60;Martin/Milani&#62; </label>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
 
-                </div>
-            </nav>
-        </header>
+        </div>
+      </nav>
+    </header>
 
 
-        <!-- Introduction  -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Martin</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Front End Developer</p>
-            <a href="#services" class="scroll-down" address="true"></a>
-        </section>
+    <!-- Introduction  -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Martin</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Front End Developer</p>
+      <a href="https://drive.google.com/open?id=1Nyb-BPkyqP6R4V3O8oc3FlWqc_x9L1csmNvydJjviG4" class="btn btn-cv"
+        target="_blank">My CV</a>
+      <a href="#services" class="scroll-down" address="true"></a>
+    </section>
 
-        <!-- My Services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title  section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service data">
-                    <h3>Building apps that people can use</h3>
-                    <p>I am a Front End Developer building websites and web applications specialize in <strong>HTML,
-                            CSS,
-                            JavaScript
-                            and React</strong>.
-                        </br>
-                        I love learning new things and sharing them with my community. Take a look at my work and feel
-                        free
-                        to contact me directly if you are interested.</p>
-                </div>
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <container>
+        <h2 class="section__title  section__title--services">What I do</h2>
+        <div class="services">
+          <div class="service data">
+            <h3>Building apps that people can use</h3>
+            <p>I am a Front End Developer building websites and web applications specialize in <strong>HTML,
+                CSS,JavaScript and React</strong>. I love learning new things and sharing them with my community.
+              Take a look at my work and feel free to contact me directly if you are interested.</p>
+          </div>
+        </div>
+        <h4>Languages, Frameworks & Libraries</h4>
+        <ul class="icons-list">
+          <li><img src="icons/icons8-html-5.svg" alt="html icon"></li>
+          <li><img src="icons/icons8-css3.svg" alt="css icon"></li>
+          <li> <img src="icons/icons8-javascript.svg" alt="javascript icon"> </li>
+          <li> <img src="icons/icons-react.svg" alt="react icon"> </li>
+          <li> <img src="icons/icons8-material-ui.svg" alt="material ui icon"> </li>
+          <li> <img src="icons/icons8-bootstrap.svg" alt="bootstrap icon"> </li>
+
+        </ul>
+        <div class="buttons">
+          <a href="#work" class="btn btn-work">My Work</a>
+        </div>
+        <a href="#work" class="scroll-down" address="true"></a>
+      </container>
+
+
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title--work">My work</h2>
+      <p class="section__subtitle--work">A selection of my range of work</p>
+
+      <div class="portfolio">
+
+        <!-- Portfolio item 01 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="img/iss-smartmockups_kcazx6ui.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <div class="card-title">ISS Tracker</div>
+            <div class="card-subtitle">React / Api / Material-UI</div>
+            <div class="card-text">Web app that shows the current position of the International Space Station and let
+              you know when is visible from your location.</div>
+            <div class="card-actions">
+              <a class="card-actions-link" href="https://github.com/martinmilani/iss-tracker" target="_blank">github</a>
+              <a class="card-actions-link" href="https://iss-live-tracker.herokuapp.com/" target="_blank">Demo</a>
             </div>
+          </div>
+        </div>
 
-            <ul class="icons-list">
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-css3-alt"></i></li>
-                <li><i class="fab fa-js"></i></li>
-                <li><i class="fab fa-react"></i></li>
-            </ul>
-            <div class="buttons">
-                <a href="#work" class="btn btn-work">My Work</a>
-                <a href="https://drive.google.com/open?id=1Nyb-BPkyqP6R4V3O8oc3FlWqc_x9L1csmNvydJjviG4"
-                    class="btn btn-cv" target="_blank">My CV</a>
+        <!-- Portfolio item 02 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="img/smartmockups_pomodoroclock.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <div class="card-title">Pomodoro Clock</div>
+            <div class="card-subtitle">React / Material-UI</div>
+            <div class="card-text"> Adjustable countdown timer with sound.</div>
+            <div class="card-actions">
+              <a class="card-actions-link" href="https://github.com/martinmilani/pomodoro-clock"
+                target="_blank">github</a>
+              <a class="card-actions-link" href="https://pomodoro-clock-11252.web.app/" target="_blank">Demo</a>
             </div>
-            <a href="#work" class="scroll-down" address="true"></a>
+          </div>
+        </div>
 
-        </section>
 
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title--work">My work</h2>
-            <p class="section__subtitle--work">A selection of my range of work</p>
-
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://codepen.io/martinmilani/full/QWwWJKL" target="blank" class="portfolio__item">
-                    <img src="img\drum-machine.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 02 -->
-                <a href="https://codepen.io/martinmilani/full/bGNaBXV" target="blank" class="portfolio__item">
-                    <img src="img\Calculator.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 03 -->
-                <a href="https://codepen.io/martinmilani/full/xxbWyrZ" target="blank" class="portfolio__item">
-                    <img src="img\pomodoro.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 04 -->
-                <a href="https://codepen.io/martinmilani/full/gOOJOrL" target="blank" class="portfolio__item">
-                    <img src="img\mark-down.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 05 -->
-                <a href="https://codepen.io/martinmilani/full/GRRYqEb" target="blank" class="portfolio__item">
-                    <img src="img/quote.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 06 -->
-                <a href="https://codepen.io/martinmilani/full/oROBdQ" target="blank" class="portfolio__item">
-                    <img src="img/form.jpg" alt="" class="portfolio__img">
-                </a>
+        <!-- Portfolio item 03 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="img\drum-machine-smartmockups.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <div class="card-title">Drum-Machine</div>
+            <div class="card-subtitle">React / Material-UI</div>
+            <div class="card-text"> Recreate a Drum Machine, hit the keys to play sounds.</div>
+            <div class="card-actions">
+              <a class="card-actions-link" href="https://github.com/martinmilani/drum-machine"
+                target="_blank">github</a>
+              <a class="card-actions-link" href="https://martinmilani.github.io/drum-machine/" target="_blank">Demo</a>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:martin.milani.mdq@gmail.com" target="blank"
-                class="footer__link">martin.milani.mdq@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a href="https://codepen.io/martinmilani" target="blank" class="social-list__link">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="https://github.com/martinmilani" target="blank" class="social-list__link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="https://www.linkedin.com/in/martin-milani-mdq?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3AANgSTASAyUqj99wlvNVQ%3D%3D"
-                        target="blank" class="social-list__link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+        <!-- Portfolio item 04 -->
+        <div class="card">
+          <div class="card-media">
+            <img src="img/calculator-smartmockups.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <div class="card-title">Calculator</div>
+            <div class="card-subtitle">React/Material-UI</div>
+            <div class="card-text"> Calculator to make simple operation can handle negative numbers.</div>
+            <div class="card-actions">
+              <a class="card-actions-link" href="https://github.com/martinmilani/calculator-app"
+                target="_blank">github</a>
+              <a class="card-actions-link" href="https://calculator-app-63f2b.web.app/" target="_blank">Demo</a>
+            </div>
+          </div>
+        </div>
+    </section>
 
-        <script src="js/index.js"></script>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:martin.milani.mdq@gmail.com" target="blank" class="footer__link">martin.milani.mdq@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/martinmilani" target="blank" class="social-list__link">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/martin-milani-mdq?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3AANgSTASAyUqj99wlvNVQ%3D%3D"
+            target="blank" class="social-list__link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://codepen.io/martinmilani" target="blank" class="social-list__link">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </div>
 </body>
 
 </html>
