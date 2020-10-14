@@ -485,6 +485,10 @@ h4 {
   overflow: auto;
 }
 
+.card-text > ul > li {
+  margin-top: 0.25em;
+}
+
 .card-actions {
   margin-top: 1.5em;
 }
